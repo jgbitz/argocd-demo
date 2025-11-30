@@ -6,7 +6,7 @@ metadata:
     app: blue-green-demo
     version: blue
 spec:
-  replicas: 2
+  replicas: 0
   selector:
     matchLabels:
       app: blue-green-demo
