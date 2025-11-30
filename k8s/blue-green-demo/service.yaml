@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: bg-demo
+  labels:
+    app: blue-green-demo
+spec:
+  type: ClusterIP
+  selector:
+    app: blue-green-demo
+    version: blue   # start with blue
+  ports:
+    - port: 80
+      targetPort: 80
+      protocol: TCP

@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: green-index
+data:
+  index.html: |
+    <html>
+      <body style="background-color:green; color:white;">
+        <h1>GREEN version</h1>
+      </body>
+    </html>
